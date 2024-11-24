@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(247, 236, 222);
+  padding: 48px 0px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  width: fit-content;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  padding: 8px 0px;
+  position: relative;
+  margin: auto;
+}
+h1::after {
+  content: "";
+  background-color: rgb(254, 194, 96);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 60%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+h1:hover::after {
+  position: absolute;
+  top: 40%;
+}
+h1::selection {
+  background-color: rgb(254, 194, 96);
+}
+
+.group {
+  border-top: 2px black dotted;
+  border-bottom: 2px black dotted;
+}
+
+h2 {
+  font-size: 25px;
+  width: fit-content;
+  background-image: linear-gradient(to right, rgb(60, 165, 92), #b5ac49);
+  background-clip: text;
+  color: transparent;
+}
+.inp {
+  text-align: start;
+}
+.label {
+  text-align: start;
+  margin-left: 0%;
+  color: rgb(138, 158, 35);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}

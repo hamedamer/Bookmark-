@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="img/Bookmark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="row w-100 p-3 py-4 d-flex justify-content-center align-items-center"
+      >
+        <div class="item">
+          <h1 class="mb-5 py5 fw-bold">Bookmarker</h1>
+          <div class="group mt-5 py-4 px-3 mt-4 text-center">
+            <div
+              class="ssss Bookmark mb-1 d-flex justify-content-center align-items-start gap-4"
+            >
+              <i
+                class="fa-solid fa-bookmark fs-2 me-2"
+                style="color: #3ca55c"
+              ></i>
+              <h2>Bookmark your favorite sites</h2>
+              <i
+                class="fa-solid fa-bookmark fs-2 ms-2"
+                style="color: #3ca55c"
+              ></i>
+            </div>
+
+            <div class="inp fw-bold">
+              <i class="fa-solid fa-book-bookmark be-1"></i>
+              <label for="BookmarkName" class="mb-1">Site Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="WebsitName"
+                placeholder="Bookmark Name"
+              />
+            </div>
+
+            <div class="inp fw-bold">
+              <i class="fa-solid fa-link be-1"></i>
+              <label for="WebsiteURL" class="mb-1">Site URL</label>
+              <input
+                type="url"
+                class="form-control"
+                id="WebsiteURL"
+                placeholder="Website URL"
+              />
+            </div>
+
+            <button
+              onclick="addWebsit()"
+              class="btn btn-submit btn-warning px-5 mt-2"
+              id="submitBtn"
+            >
+              Submit
+            </button>
+          </div>
+
+          <table class="table mt-4 text-center bg-light">
+            <thead>
+              <tr>
+                <th class="text-capitalize">Index</th>
+                <th class="text-capitalize">Website Name</th>
+                <th class="text-capitalize">Visit</th>
+                <th class="text-capitalize">Delete</th>
+              </tr>
+            </thead>
+
+            <tbody id="tebl"></tbody>
+
+            <tbody id="tableContent"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
